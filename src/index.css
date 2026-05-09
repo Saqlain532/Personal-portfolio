@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+/* Dark theme (default) */
+:root {
+  --color-base: #0B1120;
+  --color-surface: #111827;
+  --color-primary: #8B5CF6;
+  --color-primary-hover: #7C3AED;
+  --color-text-main: #F9FAFB;
+  --color-text-muted: #9CA3AF;
+  --color-border: #1F2937;
+  --color-surface-variant: #1F2937;
+}
+
+/* Light theme */
+html.light {
+  --color-base: #FFFFFF;
+  --color-surface: #F8FAFC;
+  --color-primary: #8B5CF6;
+  --color-primary-hover: #7C3AED;
+  --color-text-main: #2D3748;
+  --color-text-muted: #4B5563;
+  --color-border: #CBD5E1;
+  --color-surface-variant: #F1F5F9;
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif; /*Headings*/
+  --font-display: 'Space Grotesk', sans-serif;   /*paragraph*/
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace; /*skills*/
+
+  /* color palette */
+  --color-base: var(--color-base);
+  --color-surface: var(--color-surface);
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-text-main: var(--color-text-main);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-surface-variant: var(--color-surface-variant);
+}
