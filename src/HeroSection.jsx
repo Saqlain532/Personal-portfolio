@@ -1,4 +1,4 @@
-import picture from './assets/saqlain.jpg'
+
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "motion/react"
 import { projects } from './assets/projectsData';
@@ -13,7 +13,7 @@ export const HeroSection = () => {
         
         {/* Mobile Image */}
         <div className="h-40 w-40 mb-6">
-          <motion.img src={picture} 
+          <motion.img src="/saqlain.jpg"
             alt="Saqlain Mustaque" 
             className="rounded-full w-full h-full object-cover"
             whileHover={{ rotateY: 180 }}
@@ -62,7 +62,7 @@ export const HeroSection = () => {
         {/* Desktop Left - Image */}
         <div className="mt-4 w-1/2 flex flex-col items-center justify-center">
           <div className="h-60 w-80 mb-20">
-            <motion.img src={picture} 
+            <motion.img src="/saqlain.jpg" 
               alt="Saqlain Mustaque" 
               className="rounded-full  object-cover"
               whileHover={{ rotateY: 180 }}
